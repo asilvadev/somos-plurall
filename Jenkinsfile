@@ -8,13 +8,13 @@ pipeline {
     stages {
         stage('Preparation'){
             steps {
-                sh 'cd web && bundle install'
+                sh 'bundle install'
             }
         }
         
         stage('Testing') {
             steps {
-                sh 'cd web && cucumber -p jenkins'
+                sh 'cucumber -p jenkins'
             }
         }
         stage('UAT'){
