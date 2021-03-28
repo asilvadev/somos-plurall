@@ -50,7 +50,7 @@ https://chromedriver.chromium.org/downloads
 ```
 
 ```
-A API do sistema foi DESCONTINUADA, logo não foi usado HTTParty+Rspec para solucionar alguns casos.
+A API do sistema foi DESCONTINUADA
 
 INFO:
 https://github.com/Khan/khan-api
@@ -96,5 +96,11 @@ allure serve logs/
 ```
 
 ![allure-web](_/allure-plurall.gif)
+
+```
+CI via Jenkins + AllureFramework
+```
+
+![allure-web](_/jenkins-plurall.png)
 
 @asilvadev
