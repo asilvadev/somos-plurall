@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Prod'){
             steps {
-                allure includeProperties: false, jdk: '', results: [[path: 'web/logs']]
+                allure includeProperties: false, jdk: '', results: [[path: '/logs']]
             }
         }
     }
