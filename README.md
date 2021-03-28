@@ -1,4 +1,4 @@
-<div align="center"><img src="https://blog.compassouol.com/wp-content/uploads/2020/03/LogoCompasso-negativo.jpg" title="trello" alt="trello" width="350" height="125" />
+<div align="center"><img src="https://escolasaojose.files.wordpress.com/2020/05/plurall-download-plurall-logo.png" title="trello" alt="somos-plurall"  />
 
 ![GitHub](https://img.shields.io/github/license/asilvadev/QA-automacao-RockLov?style=flat-square)
 ![Made](https://img.shields.io/badge/Made_with-Coffee-red?logo=coffeescript&style=flat-square)
@@ -24,7 +24,7 @@
 
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/85ec92b476b9e9ef1d1e18cb42f894b6124cee88/icons/gemfile.svg" title="gemfile" alt="gemfile" width="25" height="25" />
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/85ec92b476b9e9ef1d1e18cb42f894b6124cee88/icons/yaml.svg" title="yaml" alt="yaml" width="25" height="25" />
-
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/85ec92b476b9e9ef1d1e18cb42f894b6124cee88/icons/jenkins.svg" title="jenkins" alt="jenkins" width="25" height="25" />
 </P>
 <br/>
 
@@ -50,10 +50,20 @@ https://chromedriver.chromium.org/downloads
 ```
 
 ```
-Existem dois arquivos para executar às chamadas API
-Importação via
-Insomnia use: Insomnia.json
-Postman use:  Postman.json
+A API do sistema foi DESCONTINUADA, logo não foi usado HTTParty+Rspec para solucionar alguns casos.
+
+INFO:
+https://github.com/Khan/khan-api
+```
+
+```
+⚠️ Atenção ⚠️
+
+Para usar o jenkins é preciso dar 'build' no docker ruby-web-agent que se encontra na pasta infra
+Usando sua conta pessoal do Docker
+
+Altere o arquivo Jenkins
+00rion/ruby-web-agent → seu_usuario/ruby-web-agent
 ```
 
 # Automação Web
@@ -63,9 +73,9 @@ Postman use:  Postman.json
 ```
 Ruby + Cucumber + Capybara + AllureFramework
 
-git clone https://github.com/asilvadev/compasso-uol.git
+git clone https://github.com/asilvadev/somos-plurall.git
 
-cd compasso-uol/web
+cd somos-plurall
 bundle install
 cucumber
 ```
@@ -76,7 +86,7 @@ cucumber
 ↓ Cucumber output via terminal ↓
 ```
 
-![cucumber-web](_/output-cmd-web.png)
+![cucumber-web](_/plurall.png)
 
 ```
 Para visualizar o report no Allure execute no terminal
@@ -85,45 +95,6 @@ allure serve logs/
 ↓ Allure report output via terminal ↓
 ```
 
-![allure-web](_/allure-web-compasso-uol.gif)
-
-# Automação WebService/API
-
-## 🛠️ Steps
-
-```
-Ruby + Cucumber + HTTParty + AllureFramework
-
-git clone https://github.com/asilvadev/compasso-uol.git
-
-cd compasso-uol/webservice-api
-bundle install
-cucumber
-```
-
-## 📷 Screenshots
-
-```
-↓ Cucumber output via terminal ↓
-```
-
-![cucumber-api](_/output-cmd-api.png)
-
-```
-Para visualizar o report no Allure execute no terminal
-allure serve logs/
-
-↓ Allure report output via terminal ↓
-```
-
-![allure-api](_/allure-webserverapi-compasso-uol.gif)
-
-## 📷 Screenshots
-
-```
-↓ Insomnia ↓
-```
-
-![insomnia](_/insomnia.gif)
+![allure-web](_/allure-plurall.gif)
 
 @asilvadev
